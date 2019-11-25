@@ -21,7 +21,13 @@ public class Controlador{
     public ModelAndView cadastro(Aluno a){
         ModelAndView retorno = new ModelAndView("resultado.html");
         retorno.addObject("nome", a.getNome());
+        retorno.addObject("sobrenome", a.getSobrenome());
+        retorno.addObject("email", a.getEmail());
         retorno.addObject("senha", a.getSenha());
+        retorno.addObject("endereco", a.getEndereco());
+        retorno.addObject("cidad", a.getCidade());
+        retorno.addObject("estado", a.getEstado());
+        retorno.addObject("cep", a.getCep());
         return retorno;
     }
 
